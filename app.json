@@ -1,0 +1,88 @@
+{
+    "name": "UFOVc",
+    "logo": "https://telegra.ph/file/11fb9881a34e73137703b.jpg",
+    "description": "UFO Music Voice Chat.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/YAF3Y/bot",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "حط سترنك!",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "توكــن بوتـــك !",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "إســـم بوتــك !.",
+            "required": false,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "يوزر نيــم بوتــك منغيــر -> @",
+            "required": true,
+            "value": "EEBB_BOT"
+        },
+        "ASSISTANT_NAME": {
+            "description": "يوزر نيــم حساب المساعد",
+            "required": true,
+            "value": "YA_FE"
+        },
+        "BG_IMAGE": {
+            "description": "خلــفية",
+            "required": false,
+            "value": "https://telegra.ph/file/11fb9881a34e73137703b.jpg"
+        },
+        "THUMB_IMG": {
+            "description": "سيبــها زي مهي عادي يبا -> bg_image",
+            "required": false,
+            "value": "https://telegra.ph/file/11fb9881a34e73137703b.jpg"
+        },
+        "OWNER_NAME": {
+            "description": "حط يوزركـــ منغــير -> @",
+            "required": false,
+            "value": "IBOIBO100"
+        },
+        "API_ID": {
+            "description": "حــط App ID from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "حــط Api hash from my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "ايدي المطور",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "max",
+            "required": true,
+            "value": "60"
+        },
+        "PMPERMIT": {
+            "description": "سيــبها.",
+            "required": false,
+            "value": "ENABLE"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "تحديثاتــ سورس ايبو",
+            "required": false,
+            "value": "HH_418"
+        },
+        "GROUP_SUPPORT": {
+            "description": "جروبــ الدعــم",
+            "required": false,
+            "value": "JJ8JJ8"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/YAF3Y/bot/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
